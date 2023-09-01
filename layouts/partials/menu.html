@@ -1,0 +1,5 @@
+{{ $currentPage := . }}
+{{ range (default .Site.Menus.main (index .Site.Menus ($.Scratch.Get "section"))) }}
+&nbsp;<a href="{{ .URL }}">{{ .Name }}</a>&nbsp;
+{{ end }}
+{{ partial "menu_extra.html" . }}

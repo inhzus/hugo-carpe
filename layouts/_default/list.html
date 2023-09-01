@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+
+{{ .Content }}
+  <tt>
+  {{ range (where (cond .IsHome .Site.RegularPages .Pages) "Section" "!=" "") }}
+    {{ .Date.Format "2006/01/02" }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <br>
+  {{ end }}
+  </tt>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,14 @@
+name = "Carpe"
+license = "Unlicense"
+description = "Theme carpe"
+tags = ["minimal", "blog", "personal", "clean", "simple", "minimalist"]
+features = ["blog"]
+min_version = "0.1"
+
+[author]
+  name = "Inhzus"
+  homepage = "https://inhzus.io"
+
+[original]
+    author = "Tink"
+    homepage = "http://www.gaojinan.com/"
