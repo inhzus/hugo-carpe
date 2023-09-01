@@ -1,9 +1,18 @@
 /* Micro Reset */
 
-h1::before,
-h2::before,
-h3::before {
+h1::before {
   content: "# ";
+}
+h2::before {
+  content: "## ";
+}
+h3::before {
+  content: "### ";
+}
+
+a,
+a:visited {
+  color: inherit;
 }
 
 *,
@@ -37,7 +46,7 @@ em {
 
 /* Chroma & pre code */
 pre {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 /* Background */
 .bg {

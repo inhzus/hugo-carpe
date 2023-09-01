@@ -59,4 +59,7 @@
     {{ partial "menu.html" . }}
     <hr>
     <article>
+      <header>
+        {{ if not .IsHome }}<h1>{{ .Title }}</h1>{{ end }}
+      </header>
 
