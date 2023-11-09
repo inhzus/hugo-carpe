@@ -55,11 +55,8 @@
   {{- $section := (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) -}}
   {{ $.Scratch.Set "section" $section }}
   <body name="top">
-    {{ partialCached "tagline.html" . $section }}
-    {{ partial "menu.html" . }}
+    <header>
+      {{ partialCached "tagline.html" . $section }}
+      {{ partial "menu.html" . }}
+    </header>
     <hr>
-    <article>
-      <header>
-        {{ if not .IsHome }}<h1>{{ .Title }}</h1>{{ end }}
-      </header>
-

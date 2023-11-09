@@ -1,5 +1,8 @@
 {{ partial "header.html" . }}
 
-{{ if .Params.toc }} {{ .TableOfContents }} {{ end }}
-{{ .Content }}
+<article>
+  {{ if not .IsHome }}<h1>{{ .Title }}</h1>{{ end }}
+  {{ if .Params.toc }} {{ .TableOfContents }} {{ end }}
+  {{ .Content }}
+</article>
 {{ partial "footer.html" . }}
