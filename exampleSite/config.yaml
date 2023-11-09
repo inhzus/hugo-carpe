@@ -36,6 +36,7 @@ params:
   highlightjsLang: ["latex"]
   highlightjsTheme: "github"
   highlightjsVersion: "11.7.0"
+  microsoftClarity: ""
 
 markup:
   highlight:
